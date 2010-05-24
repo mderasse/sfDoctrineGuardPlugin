@@ -15,7 +15,7 @@
  * @subpackage task
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @author     Jonathan H. Wage <jonwage@gmail.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardCreateUserTask.class.php 28922 2010-03-31 13:53:45Z noel $
  */
 class sfGuardCreateUserTask extends sfBaseTask
 {
@@ -45,7 +45,7 @@ class sfGuardCreateUserTask extends sfBaseTask
     $this->detailedDescription = <<<EOF
 The [guard:create-user|INFO] task creates a user:
 
-  [./symfony guard:create-user fabien password|INFO]
+  [./symfony guard:create-user mail@example.com fabien password Fabien POTENCIER|INFO]
 EOF;
   }
 

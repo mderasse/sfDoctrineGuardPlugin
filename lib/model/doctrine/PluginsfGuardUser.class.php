@@ -6,7 +6,7 @@
  * @package    sfDoctrineGuardPlugin
  * @subpackage model
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: PluginsfGuardUser.class.php 25605 2009-12-18 18:55:55Z Jonathan.Wage $
  */
 abstract class PluginsfGuardUser extends BasesfGuardUser
 {

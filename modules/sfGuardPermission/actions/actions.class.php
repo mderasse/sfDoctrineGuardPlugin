@@ -9,7 +9,7 @@ require_once dirname(__FILE__).'/../lib/sfGuardPermissionGeneratorHelper.class.p
  * @package    sfGuardPlugin
  * @subpackage sfGuardPermission
  * @author     Fabien Potencier
- * @version    SVN: $Id$
+ * @version    SVN: $Id: actions.class.php 23319 2009-10-25 12:22:23Z Kris.Wallsmith $
  */
 class sfGuardPermissionActions extends autosfGuardPermissionActions
 {

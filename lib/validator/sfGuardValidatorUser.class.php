@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardValidatorUser.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfGuardValidatorUser extends sfValidatorBase
 {
@@ -41,7 +41,7 @@ class sfGuardValidatorUser extends sfValidatorBase
        {
            $user = call_user_func_array($callable, array($username));
        } else {
-           $user = $this->getTable()->retrieveByUsername($username);
+           $user = $this->getTable()->$method($username);
        }
         // user exists?
        if($user)

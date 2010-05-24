@@ -15,7 +15,7 @@
  * @subpackage task
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @author     Hugo Hamon <hugo.hamon@sensio.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardPromoteSuperAdminTask.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfGuardPromoteSuperAdminTask extends sfBaseTask
 {

@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardSecurityUser.class.php 25605 2009-12-18 18:55:55Z Jonathan.Wage $
  */
 class sfGuardSecurityUser extends sfBasicSecurityUser
 {

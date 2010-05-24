@@ -14,7 +14,7 @@
  * @package    symfony
  * @subpackage task
  * @author     Hugo Hamon <hugo.hamon@sensio.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardChangePasswordTask.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfGuardChangePasswordTask extends sfBaseTask
 {

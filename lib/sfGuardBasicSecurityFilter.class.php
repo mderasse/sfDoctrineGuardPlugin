@@ -14,7 +14,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardBasicSecurityFilter.class.php 27166 2010-01-25 21:04:41Z Kris.Wallsmith $
  * 
  * @deprecated Use {@link sfGuardRememberMeFilter} instead
  */

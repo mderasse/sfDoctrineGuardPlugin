@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardRouting.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfGuardRouting
 {
@@ -113,6 +113,16 @@ class sfGuardRouting
    */
   static public function addRouteForRegister(sfEvent $event)
   {
-    $event->getSubject()->prependRoute('sf_guard_register', new sfRoute('/guard/register', array('module' => 'sfGuardRegister', 'action' => 'index'))); 
+    $r = $event->getSubject();
+    $r->prependRoute('sf_guard_register', new sfRoute('/guard/register', array('module' => 'sfGuardRegister', 'action' => 'index')));
+    $r->prependRoute('sf_guard_register_confirmation', new sfDoctrineRoute('/guard/register/:username/:unique', array(
+      'module' => 'sfGuardRegister',
+      'action' => 'confirmation'
+    ), array(
+      'sf_method' => 'get'
+    ), array(
+      'model' => 'sfGuardUser',
+      'type' => 'object'
+    )));
   }
 }

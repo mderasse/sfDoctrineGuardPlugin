@@ -14,7 +14,7 @@
  * @package    symfony
  * @subpackage task
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: sfGuardAddGroupTask.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfGuardAddGroupTask extends sfBaseTask
 {

@@ -6,7 +6,7 @@
  * @package    sfDoctrineGuardPlugin
  * @subpackage model
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
+ * @version    SVN: $Id: PluginsfGuardUserTable.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 abstract class PluginsfGuardUserTable extends Doctrine_Table
 {
