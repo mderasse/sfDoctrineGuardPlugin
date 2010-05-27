@@ -30,10 +30,10 @@ class sfGuardForgotPasswordTask extends sfBaseTask
 
     $this->namespace = 'guard';
     $this->name = 'remove-forgot-users';
-    $this->briefDescription = 'Remove all forgot password since 24 hours';
+    $this->briefDescription = 'Remove outdated forgot password';
 
     $this->detailedDescription = <<<EOF
-The [guard:remove-forgot-users|INFO] task remove all forgot password since 24 hours:
+The [guard:remove-forgot-users|INFO] task remove outdated forgot password:
 
   [./symfony guard:remove-forgot-users |INFO]
 EOF;
@@ -51,8 +51,15 @@ EOF;
       ->delete()
       ->where('p.expires_at <= NOW()');
       
-    $result = $p->execute();
+    if(count($p))
+    {
+      $p->execute();
+    }
+    else 
+    {
+      $p = null;
+    }
 
-    $this->logSection('guard', sprintf('Delete %s forgot users', count($result)));
+    $this->logSection('guard', sprintf('Delete %s forgot users', count($p)));
   }
 }
