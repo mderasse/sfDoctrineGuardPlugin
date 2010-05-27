@@ -54,7 +54,7 @@
       </trans-unit>
       <trans-unit>
         <source>Fill out the form below to request an e-mail with information on how to reset your password.</source>
-        <target>Compléter le formulaire ci-dessous pour recevoir un email contenant les informations pour réinitiliser votre mot de passe.</target>
+        <target>Complétez le formulaire ci-dessous pour recevoir un email contenant les informations pour réinitiliser votre mot de passe.</target>
       </trans-unit>
       <trans-unit>
         <source>Register</source>
@@ -120,6 +120,10 @@
         <source>Password updated successfully!</source>
         <target>Votre mot de passe a été mis à jour !</target>
       </trans-unit>
+      <trans-unit>
+        <source>Invalid e-mail address!</source>
+        <target>L'adresse mail n'existe pas !</target>
+      </trans-unit>    
     </body>
   </file>
 </xliff>
