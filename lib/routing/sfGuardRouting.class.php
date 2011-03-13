@@ -115,7 +115,7 @@ class sfGuardRouting
   {
     $r = $event->getSubject();
     $r->prependRoute('sf_guard_register', new sfRoute('/guard/register', array('module' => 'sfGuardRegister', 'action' => 'index')));
-    $r->prependRoute('sf_guard_register_confirmation', new sfDoctrineRoute('/guard/register/:username/:unique', array(
+    $r->prependRoute('sf_guard_register_confirmation', new sfDoctrineRoute('/guard/register/:username/:token', array(
       'module' => 'sfGuardRegister',
       'action' => 'confirmation'
     ), array(

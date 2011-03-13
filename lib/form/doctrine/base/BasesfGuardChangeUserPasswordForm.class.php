@@ -21,9 +21,7 @@ class BasesfGuardChangeUserPasswordForm extends BasesfGuardUserForm
     $this->widgetSchema['password_again'] = new sfWidgetFormInputPassword();
     $this->validatorSchema['password_again'] = clone $this->validatorSchema['password'];
     $this->validatorSchema['password_again']->setOption('required', true);
-    
-    $this->widgetSchema->moveField('password_again', 'after', 'password');
-    
+
     $this->mergePostValidator(new sfValidatorSchemaCompare('password', sfValidatorSchemaCompare::EQUAL, 'password_again', array(), array('invalid' => 'The two passwords must be the same.')));
   }
 }

@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: sfGuardValidatorUser.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
+ * @version    SVN: $Id: sfGuardValidatorUser.class.php 30561 2010-08-06 09:03:28Z noel $
  */
 class sfGuardValidatorUser extends sfValidatorBase
 {

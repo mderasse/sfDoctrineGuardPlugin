@@ -13,7 +13,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: sfGuardSecurityUser.class.php 25605 2009-12-18 18:55:55Z Jonathan.Wage $
+ * @version    SVN: $Id: sfGuardSecurityUser.class.php 30264 2010-07-16 16:59:21Z Jonathan.Wage $
  */
 class sfGuardSecurityUser extends sfBasicSecurityUser
 {
@@ -172,14 +172,7 @@ class sfGuardSecurityUser extends sfBasicSecurityUser
    */
   protected function generateRandomKey($len = 20)
   {
-    $string = '';
-    $pool   = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for ($i = 1; $i <= $len; $i++)
-    {
-      $string .= substr($pool, rand(0, 61), 1);
-    }
-
-    return md5($string);
+    return base_convert(sha1(uniqid(mt_rand(), true)), 16, 36);
   }
 
   /**
