@@ -124,7 +124,11 @@
         <source>Invalid e-mail address!</source>
         <target>L'adresse mail n'existe pas !</target>
       </trans-unit>
-
+      <trans-unit>
+        <source>Logout complete!</source>
+        <target>Vous avez bien été déconnecté !</target>
+      </trans-unit>
+      	
     </body>
   </file>
 </xliff>
