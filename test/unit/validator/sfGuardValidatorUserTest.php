@@ -5,7 +5,7 @@
  */
 include dirname(__FILE__).'/../../../../../test/bootstrap/unit.php';
 
-$t = new lime_test(7);
+$t = new lime_test(9);
 
 class MockUser
 {
