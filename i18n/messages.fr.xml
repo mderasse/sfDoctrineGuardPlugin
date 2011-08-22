@@ -29,6 +29,10 @@
         <target>Répéter le mot de passe</target>
       </trans-unit>
       <trans-unit>
+        <source>Remember me</source>
+        <target>Rester actif</target>
+      </trans-unit>
+      <trans-unit>
         <source>is active</source>
         <target>Utilisateur actif ?</target>
       </trans-unit>
