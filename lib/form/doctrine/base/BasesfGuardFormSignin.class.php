@@ -33,6 +33,8 @@ class BasesfGuardFormSignin extends BaseForm
       $this->widgetSchema['username']->setLabel('Username or E-Mail');
     }
 
+	$this->widgetSchema['remember']->setLabel('Remember me');
+
     $this->validatorSchema->setPostValidator(new sfGuardValidatorUser());
 
     $this->widgetSchema->setNameFormat('signin[%s]');
